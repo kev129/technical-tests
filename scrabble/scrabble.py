@@ -51,3 +51,10 @@ def get_score(word):
     return score
 
 print(get_score('Guardian'))
+
+# Game
+# get randomized bag
+# player gets tiles
+# player inserts word
+# verify word is valid
+# calculate points
