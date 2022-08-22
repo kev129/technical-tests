@@ -31,9 +31,23 @@ randomize_bag(bag_of_letters)
 
 print(bag_of_letters)
 
-
+player_tiles = []
 # Get tiles
+def get_tiles(shuffled_bag):
+    while len(player_tiles) < 7:
+        player_tiles.append(shuffled_bag.pop())
 
-# Find Valid word
+get_tiles(bag_of_letters)
+
+print(player_tiles)
+
+# Find Valid word - Going to test with inputted words, iterating may take too long
 
 # Get score
+def get_score(word):
+    score = 0
+    for letter in word:
+        score += points[letter.upper()]
+    return score
+
+print(get_score('Guardian'))
